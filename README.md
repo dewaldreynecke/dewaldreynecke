@@ -1,16 +1,27 @@
-### Hi there 👋
+Hi 👋  I'm **Dewald Reynecke**
 
-<!--
-**dewaldreynecke/dewaldreynecke** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Freelance full stack web developer in Cape Town, South Africa
 
-Here are some ideas to get you started:
+I focus on helping small and medium (single entrepeneur and up) businesses with their internal workflow and processes by making custom software. I'm also available for contracting with teams doing similar work on larger projects.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 🔭 I’m currently working on an app for an educational psychologist to help with bookings, invoicing, and making confidential reports available on a customer dashboard.
+- 🌱 I’m currently learning file operations in Ruby.
+
+### Connect with me
+
+The best place to see my portfolio is my website [www.dewaldreynecke.net](https://www.dewaldreynecke.net)
+
+✉️ [dewaldreynecke@me.com](mailto:dewaldreynecke@me.com) | [Twitter](https://twitter.com/dewaldreynecke) | [Mastodon](https://mastodon.social/@dewaldr)
+
+### Technologies I use:
+
+<span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg" height="40px" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg" height="40px" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40px" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" height="40px" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" height="40px" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" height="40px" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" height="40px" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-plain.svg" height="40px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="40px" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="40px"/></span>

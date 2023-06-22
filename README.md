@@ -11,7 +11,7 @@ I focus on helping small and medium (single entrepeneur and up) businesses with 
 
 The best place to see my portfolio is my website [www.dewaldreynecke.net](https://www.dewaldreynecke.net)
 
-✉️ [dewaldreynecke@me.com](mailto:dewaldreynecke@me.com) | [Twitter](https://twitter.com/dewaldreynecke) | [Mastodon](https://mastodon.social/@dewaldr)
+✉️ [dewald@reynecke.net](mailto:dewald@reynecke.net) | [Twitter](https://twitter.com/dewaldreynecke) | [Mastodon](https://mastodon.social/@dewaldr) | [LinkedIn](https://www.linkedin.com/in/dewaldreynecke/)
 
 ### Technologies I use:
 

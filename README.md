@@ -9,7 +9,7 @@ I focus on helping small and medium (single entrepeneur and up) businesses with 
 
 ### Connect with me
 
-The best place to see my portfolio is my website [www.dewaldreynecke.net](https://www.dewaldreynecke.net)
+Just like a cobler's children have no shoes, I don't have a website (yet). When it is done it will be at [www.dewaldreynecke.net](https://www.dewaldreynecke.net)
 
 ✉️ [dewald@reynecke.net](mailto:dewald@reynecke.net) | [Twitter](https://twitter.com/dewaldreynecke) | [Mastodon](https://mastodon.social/@dewaldr) | [LinkedIn](https://www.linkedin.com/in/dewaldreynecke/)
 

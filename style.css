@@ -21,7 +21,6 @@ section {
   margin: 0 auto;
 }
 
-
 section > :first-child {
   flex-basis: 300px;
   flex-grow: 1;
@@ -33,9 +32,12 @@ section > :last-child {
   min-inline-size: 50%;
 }
 
+.main {
+  gap: 30px
+}
+
 .profile-pic {
   height: 100%;
-  padding: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,6 +79,7 @@ a {
   color: var(--txt-color);
 }
 
+
 /* UTILITY CLASSES */
 .border-tb {
   border-block-start: 1px solid var(--txt-color);
@@ -91,12 +94,20 @@ a {
   padding-block-end: 30px;
 }
 
+/* only works in Safari */
 .mt-block {
   margin-trim: block;
 }
-/* end utility classes */
+/* workaround for Firefox and Chrome */
+.mt-block-workaround {
+  margin-top: 0;
+}
+/* END UTILITY CLASSES */
 
-/* MEDIA QUERY TO STOP IT GROWING TOO WIDE */
+
+/* MEDIA QUERIES */
+
+/* constrain width */
 @media (min-width: 1201px) {
   section {
     width: 960px;
@@ -105,3 +116,5 @@ a {
     width: 960px;
   }
 }
+
+/* END MEDIA QUERIES */

@@ -9,7 +9,7 @@ I focus on helping small and medium (single entrepeneur and up) businesses with 
 
 ### Connect with me
 
-Just like a cobler's children have no shoes, I don't have a website (yet). When it is done it will be at [www.dewaldreynecke.net](https://www.dewaldreynecke.net)
+Contact details on my github profile are current. Alternatively have a look at my website: [www.dewaldreynecke.net](https://www.dewaldreynecke.net)
 
 ✉️ [dewald@reynecke.net](mailto:dewald@reynecke.net) | [LinkedIn](https://www.linkedin.com/in/dewaldreynecke/)
 

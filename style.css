@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #F4F4F4;
+  --bg-color: rgb(240, 240, 233);
   --txt-color: #00425A;
   --light-highlight-color: #d4f3e7;
   --bold-highlight-color: #FC7300;
@@ -14,30 +14,27 @@ body {
   margin: 0;
 }
 
-main {
+section {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
-  padding: 0 5%;
+  width: 80%;
+  margin: 0 auto;
 }
 
-main > :first-child {
+section > :first-child {
   flex-basis: 300px;
   flex-grow: 1;
 }
 
-main > :last-child {
+section > :last-child {
   flex-basis: 0;
   flex-grow: 999;
   min-inline-size: 55%;
 }
 
-section {
-  background-color: white;
-  border: 1px solid var(--light-highlight-color);
-  padding: 40px;
-  margin: 0 auto;
-  margin-block-end: 50px;
+.profile-pic {
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,27 +49,24 @@ p {
   line-height: 175%;
 }
 
-.banner {
-  margin: 0 0 50px 0;
-  width: 100%;
-  background-image: url("images/orange.jpg");
-  background-size: cover;
-  padding-block-start: var(--banner-padding);
+.header {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-.banner > h2 {
-  width: 100%;
-  color: white;
-  text-align: center;
-  font-size: 50px;
+.header:first-child {
+  flex-grow: 1;
 }
 
-.banner > h1 {
-  width: 100%;
-  color: white;
-  text-align: center;
-  font-size: 64px;
-  padding-block-end: 70px;
+.header > p {
+  font-size: 16px;;
+}
+
+.header > p > a {
+  text-decoration: none;
+  color: var(--txt-color);
 }
 
 .reasons {

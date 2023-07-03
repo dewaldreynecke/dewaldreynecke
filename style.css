@@ -10,14 +10,13 @@ body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   background-color: var(--bg-color);
   color: var(--txt-color);
-  padding: 0;
+  padding: 0 0 40px 0;
   margin: 0;
 }
 
 section {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
   width: 80%;
   margin: 0 auto;
 }
@@ -30,11 +29,12 @@ section > :first-child {
 section > :last-child {
   flex-basis: 0;
   flex-grow: 999;
-  min-inline-size: 55%;
+  min-inline-size: 50%;
 }
 
 .profile-pic {
   width: 100%;
+  padding-inline-start: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,6 +44,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'PT Serif', serif;
 }
 
+h3 {
+  margin-block-start: 30px;
+}
+
 p {
   margin-block-end: 0;
   line-height: 175%;
@@ -51,7 +55,7 @@ p {
 
 .header {
   width: 80%;
-  margin: 0 auto;
+  margin: 40px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -62,61 +66,29 @@ p {
 
 .header > p {
   font-size: 16px;;
+  margin: 0;
 }
 
-.header > p > a {
+a {
   text-decoration: none;
   color: var(--txt-color);
 }
 
-.reasons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-  padding: 0;
-}
-
-.reasons > li {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-inline-size: 200px;
-  list-style: none;
-  background-color: var(--light-highlight-color);
-  padding: 40px;
-}
-
-.sidebar {
-  background-color: white;
-  border: 1px solid var(--light-highlight-color);
-  padding: 30px;
-  margin: 0 auto;
-  margin-block-end: 50px;
-  text-align: center;
-}
-
-.sidebar > img {
-  border-radius: 50%;
-  border: 1px solid var(--light-highlight-color);
-  width: 300px;
-  height: 300px;
-  margin: 0;
-}
-
 /* UTILITY CLASSES */
-.shadow {
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px,
-    rgba(17, 17, 26, 0.1) 0px 16px 56px;
+.border-tb {
+  border-block-start: 1px solid var(--txt-color);
+  border-block-end: 1px solid var(--txt-color);
+  padding-block-start: 30px;
+  padding-block-end: 30px;
 }
 
-.border-rounded {
-  border-radius: 30px;
+.border-b {
+  border-block-end: 1px solid var(--txt-color);
+  padding-block-start: 30px;
+  padding-block-end: 30px;
 }
 
-.txt-shadow {
-  /* text-shadow:
-    3px 3px 0px var(--bold-highlight-color),
-    6px 6px 0px #00000055; */
-  text-shadow: 2px 2px 3px #6b6b6b;;
+.mt-block {
+  margin-trim: block;
 }
 /* end utility classes */

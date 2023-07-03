@@ -21,6 +21,7 @@ section {
   margin: 0 auto;
 }
 
+
 section > :first-child {
   flex-basis: 300px;
   flex-grow: 1;
@@ -58,7 +59,7 @@ p {
   margin: 40px auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   justify-content: space-between;
 }
 
@@ -94,3 +95,13 @@ a {
   margin-trim: block;
 }
 /* end utility classes */
+
+/* MEDIA QUERY TO STOP IT GROWING TOO WIDE */
+@media (min-width: 1201px) {
+  section {
+    width: 960px;
+  }
+  .header {
+    width: 960px;
+  }
+}

@@ -79,6 +79,22 @@ a {
   color: var(--txt-color);
 }
 
+.callout {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.callout-link {
+  color: var(--bold-highlight-color)
+}
+
+.callout > p {
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+  line-height: 200%;
+}
+
 
 /* UTILITY CLASSES */
 .border-tb {
@@ -113,6 +129,9 @@ a {
     width: 960px;
   }
   .header {
+    width: 960px;
+  }
+  .callout {
     width: 960px;
   }
 }

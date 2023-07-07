@@ -4,6 +4,7 @@
   --light-highlight-color: #d4f3e7;
   --bold-highlight-color: #FC7300;
   --banner-padding: 60px;
+  --max-width: 960px;
 }
 
 body {
@@ -14,26 +15,47 @@ body {
   margin: 0;
 }
 
-section {
+.main {
+  gap: 30px
+}
+
+.two-column {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 
-section > :first-child {
+.two-column > :first-child {
   flex-basis: 300px;
   flex-grow: 1;
 }
 
-section > :last-child {
+.two-column > :last-child {
   flex-basis: 0;
   flex-grow: 999;
   min-inline-size: 50%;
 }
 
-.main {
-  gap: 30px
+.one-column {
+  width: 80%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.callout {
+  text-align: center;
+}
+
+.callout-link {
+  color: var(--bold-highlight-color)
+}
+
+.callout > p {
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+  line-height: 200%;
 }
 
 .profile-pic {
@@ -56,8 +78,9 @@ p {
   line-height: 175%;
 }
 
-.header {
+#navbar {
   width: 80%;
+  max-width: var(--max-width);
   margin: 40px auto;
   display: flex;
   flex-wrap: wrap;
@@ -65,34 +88,36 @@ p {
   justify-content: space-between;
 }
 
-.header:first-child {
+#navbar:first-child {
   flex-grow: 1;
 }
 
-.header > p {
+#navbar > p {
   font-size: 16px;;
   margin: 0;
+}
+
+.nav-links > a {
+  padding-inline-end: 20px;
+}
+
+.nav-links > :last-child {
+  padding-inline-end: 0;
+}
+
+.nav-active {
+  color: var(--bold-highlight-color)
+}
+
+.toplink {
+  text-align: end;
+  font-size: smaller;
+  padding-block-start: 10px;
 }
 
 a {
   text-decoration: none;
   color: var(--txt-color);
-}
-
-.callout {
-  text-align: center;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.callout-link {
-  color: var(--bold-highlight-color)
-}
-
-.callout > p {
-  padding-inline-start: 40px;
-  padding-inline-end: 40px;
-  line-height: 200%;
 }
 
 
@@ -119,21 +144,3 @@ a {
   margin-top: 0;
 }
 /* END UTILITY CLASSES */
-
-
-/* MEDIA QUERIES */
-
-/* constrain width */
-@media (min-width: 1201px) {
-  section {
-    width: 960px;
-  }
-  .header {
-    width: 960px;
-  }
-  .callout {
-    width: 960px;
-  }
-}
-
-/* END MEDIA QUERIES */

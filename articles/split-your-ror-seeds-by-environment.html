@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/articles.css">
+  <title>Split your Ruby on Rails seeds by environment</title>
+  <meta name='description'
+        content="I'm a freelance software developer who helps small and medium
+        businesses build in-house and customer-facing custom software.">
+
+  <!-- Fonts from Google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=PT+Serif&display=swap" rel="stylesheet">
+
+  <!-- icons and favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fc7300">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#fc7300">
+</head>
+<body>
+  <!--
+    Hello curious visitor.
+    I hope you are delighted to find nothing special here.
+    This site was hand-coded by me and consists of only plain HTML and CSS.
+    There is no tracking, no Javascript, no server generating pages. Only some
+    statically served files. I don't know who you are or even that you are here.
+    I believe that is how the internet should be... simple, fast, and not creepy.
+
+    You can see the source code for this site on my github profile:
+    https://github.com/dewaldreynecke
+
+    Cheers!
+    Dewald
+  -->
+  <nav id="navbar">
+    <p><a href="index.html"><strong>Dewald Reynecke</strong></a></p>
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/technology.html">Technology</a>
+      <a href="#" class="nav-active">Articles</a>
+      <a href="/index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="one-column">
+    <a href="/articles" class="breadcrumb">< back to articles index</a>
+  </section>
+
+  <section class="one-column header-section">
+    <h1 class="article-title">Split your Ruby on Rails seeds by environment</h1>
+    <p class="author">Published on 2 August 2023</p>
+  </section>
+
+  <section class="one-column border-b">
+    <h3>Wait, what... why?</h3>
+    <p>
+      The seeds.rb file in Rails is a very convenient way to fill your
+      database with false/test information during development. In building the
+      application that powers this very blog I filled it with dozens of posts
+      to help me style the pages while viewing actual (fake) content.
+    </p>
+    <p>
+      That is in <em>Development</em> though — as soon as you send it to
+      <em>Test</em>, or <em>Production</em> you probably don't want that same
+      content to appear in the database. Easy enough you might think... just
+      do not seed the database in <em>Production</em>.
+    </p>
+    <p>
+      Well, yes, but with a small change in your code you can easily create
+      separate seed files for each environment. Now you'll have the opportunity
+      to write a separate seed for <em>Development</em>, creating hundreds of
+      entries, and maybe something else — shorter typically — for <em>Production</em>.
+    </p>
+    <h3>How</h3>
+    <p>
+      <strong>Create a seeds folder</strong>
+    </p>
+    <p>
+      Inside your application's <code class="inline-code">db/</code> folder,
+      create a subfolder <code class="inline-code">seeds</code>.
+    </p>
+    <pre><code>mkdir db/seeds/ && cd db/seeds/</code></pre>
+    <p>
+      <strong>Create a seed file for each environment</strong>
+    </p>
+    <p>
+      Create a new (empty, for now) file for each environment in your new
+      <code class="inline-code">seeds/</code> folder.
+    </p>
+    <pre><code>touch development.rb test.rb production.rb</code></pre>
+    <p>
+      <strong>Set up seeds.rb to run the appropriate seed</strong>
+    </p>
+    <p>
+      Edit your main <code class="inline-code">seeds.rb</code> file to look as follows:
+    </p>
+      <pre><code>puts "Starting database seed."
+puts "Current environment is: #{Rails.env.downcase}"
+load(Rails.root.join('db', 'seeds', "#{Rails.env.downcase}.rb"))
+
+# Do not add any seed command to this file. Instead, go to /db/seeds/ where you will find:
+# development.rb
+# production.rb
+# test.rb
+# Add your seed code into one of those depending on the environment where you wish for it to execute.</code></pre>
+    <p>
+      The third line (starting with <em>load</em>) will ensure that the
+      appropriate seed file, from those three we created, gets executed wherever
+      <code class="inline-code">rails db:seed</code> is run.
+    </p>
+    <p>
+      <strong>Now seed!</strong>
+    </p>
+    <p>
+      All that remains is for you to add your desired seed code to any one of
+      the new seed files and it will execute in the appropriate environment.
+      You'll probably want to start in <code class="inline-code">development.rb</code>
+      and test it locally.
+    </p>
+    <h3>Rails templates</h3>
+    <p>
+      If you want the above to happen automatically when creating your new Rails
+      application you might want to have a look at (and use, or copy) my Rails
+      templates. <a href="https://github.com/dewaldreynecke/rails-templates" target="_blank">
+      Click here to view them on Github</a>.
+    </p>
+  </section>
+
+  <section class="one-column toplink">
+    <a href="#">Back to top</a>
+  </section>
+
+</body>
+</html>

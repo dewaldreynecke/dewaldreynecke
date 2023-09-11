@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Dewald Reynecke - Freelance web developer</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/articles.css">
+  <title>Dewald Reynecke - Articles</title>
   <meta name='description'
         content="I'm a freelance software developer who helps small and medium
         businesses build in-house and customer-facing custom software.">
@@ -41,50 +42,38 @@
   <nav id="navbar">
     <p><a href="index.html"><strong>Dewald Reynecke</strong></a></p>
     <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="#" class="nav-active">Technology</a>
-      <a href="articles/index.html">Articles</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="/index.html">Home</a>
+      <a href="/technology.html">Technology</a>
+      <a href="#" class="nav-active">Articles</a>
+      <a href="/index.html#contact">Contact</a>
     </div>
   </nav>
   <section class="one-column border-tb">
-    <h1>Technology</h1>
+    <h1>This is not a blog</h1>
     <p>
-      This is on a separate page because I think it is less relevant than
-      the business value we will set out to create together. It is after all more
-      important that your website allows a customer to login and see their
-      documents, for example, than whether that website is powered by Javascript
-      or Ruby.
+      Sometimes I just want to write down something longer or less ephemeral than
+      X/Mastodon/Threads or a forum post. This is where they will go.
     </p>
     <p>
-      That said, its still of interest and the technology choices will have an
-      impact on the future maintainability and ease of expansion of your
-      application. Though we probably start out building a web application it is
-      prudent to also lay a good groudwork for expanding to smartphones apps –
-      in many cases those will be a logical second phase.
+      The <em>no blog</em> status means that there will be no RSS feed, no tags,
+      no content management system behind it, no regular posting, no expecting
+      you to come back and read more... only these hand-made pages for each
+      article, from time to time.
     </p>
-    <p>
-      Lastly, there is productivity to keep in mind. There is only one of me and
-      I need to use languages and frameworks that enable a single developer to
-      easily create an entire application in a reasonable time.
-    </p>
-    <h3>With all of that considered, here are the technologies I default to:</h3>
-    <p>
-      <strong>Frontend:</strong>
-      HTML5, CSS3, and Javascript. Javascript often with the Stimulus framework.
-    </p>
-    <p>
-      <strong>Backend:</strong>
-      Ruby on Rails
-    </p>
-    <p>
-      <strong>Database:</strong>
-      PostgreSQL
-    </p>
-    <p>
-      <strong>Hosting:</strong>
-      Up to the customer, but lacking a strong preference, Heroku.
-    </p>
+  </section>
+
+  <section class="one-flex-column border-b">
+    <div>
+      <a href="split-your-ror-seeds-by-environment.html">
+        <h2 class="article-title">Split your Ruby on Rails seeds by environment</h2>
+      </a>
+      <p class="author">Published on 2 August 2023</p>
+      <p>
+        Splitting your seeds.rb file into several that execute depending on the
+        environment (production, development, or test) will make it easier to
+        avoid seeding misshaps in production.
+      </p>
+    </div>
   </section>
 
   <section class="one-column toplink">

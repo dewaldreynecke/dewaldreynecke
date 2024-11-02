@@ -130,6 +130,10 @@ a:hover {
 
 
 /* UTILITY CLASSES */
+.hidden {
+  display: none;
+}
+
 .border-tb {
   border-block-start: 1px solid var(--txt-color);
   border-block-end: 1px solid var(--txt-color);

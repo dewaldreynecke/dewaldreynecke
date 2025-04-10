@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /gunsite/
+Disallow: /images/
+Disallow: /wilddogimages/
+Disallow: /profilepics/
+Disallow: /dbDraw/
+
+User-agent: GPTBot
+Disallow: /

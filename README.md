@@ -1,6 +1,6 @@
 Hi 👋  I'm **Dewald Reynecke**
 
-## Freelance full stack web developer in Cape Town, South Africa
+## Freelance software developer in Cape Town, South Africa
 
 I focus on helping small and medium (single entrepeneur and up) businesses with their internal workflow and processes by making custom software. I'm also available for contracting with teams doing similar work on larger projects.
 

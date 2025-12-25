@@ -1,176 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Dewald Reynecke - Freelance web developer</title>
-  <meta name='description'
-        content="I'm a freelance software developer who helps small and medium
-        businesses build in-house and customer-facing custom software.">
+<!-- BEGIN app/views/layouts/application.html.erb --><!DOCTYPE html>
+<html>
+  <head>
+    <title>Dewald Reynecke</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
-  <!-- Fonts from Google-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/tailwind-72a4b577.css" data-turbo-track="reload" />
+  </head>
 
-  <!-- icons and favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fc7300">
-  <meta name="msapplication-TileColor" content="#00aba9">
-  <meta name="theme-color" content="#fc7300">
-</head>
-<body>
-  <!--
-    Hello curious visitor.
-    I hope you are delighted to find nothing special here.
-    This site was hand-coded by me and consists of only plain HTML and CSS.
-    There is no tracking, no Javascript, no server generating pages. Only some
-    statically served files. I don't know who you are or even that you are here.
-    I believe that is how the internet should be... simple, fast, and not creepy.
+  <body class="h-screen bg-teal-800 bg-[url(/bg.jpg)] bg-repeat
+            bg-scroll">
+    <main class="container w-full mx-auto max-w-6xl flex flex-col min-h-screen">
+      <!--Larger screens-->
+      <div>
+        <div class="pt-10 px-8 mb-12 w-full
+                    md:px-0
+                    flex justify-center items-center gap-6
+                    font-[Barlow_Condensed] text-3xl font-bold text-shadow-sm text-shadow-teal-800/30">
+          <!--Logo-->
+          <img class="w-52 max-w-1/2 grow-0" src="assets/logo-bb98d4b1.png" />
 
-    You can see the source code for this site on my github profile:
-    https://github.com/dewaldreynecke
+        </div>
+      </div>
 
-    Cheers!
-    Dewald
-  -->
-  <a class="hidden" rel="me" href="https://mastodon.social/@dewaldr">Mastodon</a>
-  <nav id="navbar">
-    <p><a href="#"><strong>Dewald Reynecke</strong></a></p>
-    <div class="nav-links">
-      <a href="#" class="nav-active">Home</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-  <section class="two-column border-tb main">
-    <div>
-      <h1>The one-man product development team for your business.</h1>
-      <p>I'm a freelance software developer who helps small and medium businesses
-        build in-house and customer-facing custom software. Get the functionality
-        and ease of use you need without the daunting implementation of systems
-        not <em>quite</em> suited to your business.
-      </p>
-      <p>Based in Cape Town, South Africa.</p>
-      <p>Ready to work in person locally or remotely in the UK, European, or African time zones.</p>
-    </div>
-    <img src="images/profile.jpg" alt="greyscale photo of Dewald's face with a slight smile." class="profile-pic">
-  </section>
+      <div class="grow">
+        <section class="md:flex md:gap-6 px-8">
+          <div class="grow mt-8 md:mt-0">
+            <h1 class="text-center text-orange-700 font-[Barlow_Condensed] text-3xl font-semibold">
+              Some day there might something here, until then, enjoy your travels!
+            </h1>
+          </div>
+        </section>
+      </div>
 
-  <section class="one-column border-b callout">
-    <p>
-      Struggling with having to update your menu in many places? Endlessly
-      resending reports and looking for old emails? Need a loyalty program for
-      your small neighbourhood business? Have some old data from a legacy system
-      that your staff needs to access more easily? Still using paper forms that
-      should rather be electronic?
-    </p>
-    <p>To address these problems and many more like them...</p>
-    <p><a href="#contact" class="callout-link">Lets talk!</a></p>
-  </section>
-
-  <section class="two-column border-b">
-    <div>
-      <h2>Why choose me?</h2>
-    </div>
-    <div class="mt-block">
-      <h3 class="mt-block-workaround">Business before code</h3>
-      <p>
-        Thoroughly understanding the business requirements and necessary
-        outcomes before writing the first line of code leads to better
-        outcomes. Using my experience analysing workflows, and my project
-        managment training, I will ensure the right things happen. Though I
-        like writing code it is not the primary goal of our engagement — getting
-        the envisioned results for your business is more important.
-      </p>
-      <h3>I see the big picture</h3>
-      <p>
-        ... but still relish in the details.
-      </p>
-      <h3>Confidentiality</h3>
-      <p>
-        I strongly believe that your information is yours alone, so will not
-        be sharing anything I may see or learn at your business with anyone.
-        That is also why this website contains no tracking or analytics.
-      </p>
-      <h3>Clean simple code</h3>
-      <p>
-        Software lives on and will inevitably have to be maintained. Whether
-        it turns out to be me or someone else, they will benefit from the
-        simply structured and well documented project I put together, easing
-        the maintenance burden and cost.
-      </p>
-      <h3>Clear communication</h3>
-      <p>
-        Through years of managing projects I have learned the value of clear
-        communication. Working with me you will always know what I'm doing, why,
-        and how. I won't hide problems or challenges and you'll know what to
-        expect.
-      </p>
-    </div>
-  </section>
-
-  <section class="two-column border-b">
-    <div>
-      <h2>How I work</h2>
-    </div>
-    <div class="mt-block">
-      <p class="mt-block-workaround">
-        To address the unmet expectations and overruns that so often plague
-        software projects we will fix the scope through agreement on
-        expected outcomes at handover, along with a fixed price.
-      </p>
-      <p>
-        You are protected from cost overruns typically associated with hourly
-        billing and we are both incentivised to keep the scope and timeline in
-        check. I take the risk of time overruns, sparing you that uncertainty
-        in the budget.
-      </p>
-      <p>
-        User training will complete the first phase.
-      </p>
-      <p>
-        After the initial build we can enter another phase to address the
-        additional requirements that became clear, nice-to-have features, and
-        so on.
-      </p>
-      <p>
-        This approach ensures we all know where we stand. The software is
-        always in working order, and you benefit from continued and regular
-        progress.
-      </p>
-    </div>
-  </section>
-
-  <section class="two-column border-b" id="projects">
-    <div>
-      <h2>Previous work</h2>
-    </div>
-    <div class="mt-block">
-      <p class="mt-block-workaround">
-        I have worked on a variety of projects, from small to large, and
-        across industries. Here are some examples:
-      </p>
-    </div>
-  </section>
-
-  <section class="two-column border-b" id="contact">
-    <div>
-      <h2>Let's talk!</h2>
-    </div>
-    <div class="mt-block">
-      <p class="mt-block-workaround">No obligation. I'm happy to meet and discuss your requirements.</p>
-      <h3><a href="mailto:dewald@reynecke.net">Email me: dewald@reynecke.net</a></h3>
-      <p><em>Current availability:</em> Can take on projects starting in May 2025.</p>
-    </div>
-  </section>
-
-  <section class="one-column toplink">
-    <a href="#">Back to top</a>
-  </section>
-
-</body>
+    </main>
+  </body>
 </html>
